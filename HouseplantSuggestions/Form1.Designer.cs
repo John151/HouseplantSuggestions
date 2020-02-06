@@ -32,7 +32,6 @@
             this.label1 = new System.Windows.Forms.Label();
             this.trkTemp = new System.Windows.Forms.TrackBar();
             this.lblTemp = new System.Windows.Forms.Label();
-            this.btnSuggest = new System.Windows.Forms.Button();
             this.lblSuggestion = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.trkTemp)).BeginInit();
             this.SuspendLayout();
@@ -46,6 +45,7 @@
             this.chkSouthFacing.TabIndex = 0;
             this.chkSouthFacing.Text = "Do you have a south-facing window?";
             this.chkSouthFacing.UseVisualStyleBackColor = true;
+            this.chkSouthFacing.CheckedChanged += new System.EventHandler(this.HouseConditionsChanged);
             // 
             // label1
             // 
@@ -76,19 +76,10 @@
             this.lblTemp.TabIndex = 3;
             this.lblTemp.Text = "50 °F";
             // 
-            // btnSuggest
-            // 
-            this.btnSuggest.Location = new System.Drawing.Point(74, 264);
-            this.btnSuggest.Name = "btnSuggest";
-            this.btnSuggest.Size = new System.Drawing.Size(75, 23);
-            this.btnSuggest.TabIndex = 4;
-            this.btnSuggest.Text = "Suggest!";
-            this.btnSuggest.UseVisualStyleBackColor = true;
-            // 
             // lblSuggestion
             // 
             this.lblSuggestion.AutoSize = true;
-            this.lblSuggestion.Location = new System.Drawing.Point(215, 274);
+            this.lblSuggestion.Location = new System.Drawing.Point(196, 281);
             this.lblSuggestion.Name = "lblSuggestion";
             this.lblSuggestion.Size = new System.Drawing.Size(109, 13);
             this.lblSuggestion.TabIndex = 5;
@@ -98,9 +89,9 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(512, 355);
             this.Controls.Add(this.lblSuggestion);
-            this.Controls.Add(this.btnSuggest);
             this.Controls.Add(this.lblTemp);
             this.Controls.Add(this.trkTemp);
             this.Controls.Add(this.label1);
@@ -119,7 +110,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TrackBar trkTemp;
         private System.Windows.Forms.Label lblTemp;
-        private System.Windows.Forms.Button btnSuggest;
         private System.Windows.Forms.Label lblSuggestion;
     }
 }
