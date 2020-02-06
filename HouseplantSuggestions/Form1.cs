@@ -64,5 +64,21 @@ namespace HouseplantSuggestions
             }
 
         }
+
+        private void lnkHousePlantInfo_LinkClicked(object sender, LinkLabelLinkClickedEventArgs e)
+        {
+            ShowWebPage(lblSuggestion.Text);
+        }
+        private void ShowWebPage(string plantName) // create new method 
+        {
+            string url = "https://www.houseplant411.com/";
+
+            //link to a specific plant should be in form 
+            //"https://www.houseplant411.com/hosueplant?hpq=ivy"
+
+            url = url + "houseplant?hpq=" + plantName;
+
+            System.Diagnostics.Process.Start(url); //launch browser
+        }
     }
 }

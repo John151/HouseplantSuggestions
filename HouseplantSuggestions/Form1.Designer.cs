@@ -33,6 +33,7 @@
             this.trkTemp = new System.Windows.Forms.TrackBar();
             this.lblTemp = new System.Windows.Forms.Label();
             this.lblSuggestion = new System.Windows.Forms.Label();
+            this.lnkHousePlantInfo = new System.Windows.Forms.LinkLabel();
             ((System.ComponentModel.ISupportInitialize)(this.trkTemp)).BeginInit();
             this.SuspendLayout();
             // 
@@ -85,12 +86,24 @@
             this.lblSuggestion.TabIndex = 5;
             this.lblSuggestion.Text = "Plant suggestion here";
             // 
+            // lnkHousePlantInfo
+            // 
+            this.lnkHousePlantInfo.AutoSize = true;
+            this.lnkHousePlantInfo.Location = new System.Drawing.Point(398, 332);
+            this.lnkHousePlantInfo.Name = "lnkHousePlantInfo";
+            this.lnkHousePlantInfo.Size = new System.Drawing.Size(80, 13);
+            this.lnkHousePlantInfo.TabIndex = 6;
+            this.lnkHousePlantInfo.TabStop = true;
+            this.lnkHousePlantInfo.Text = "houseplant.411";
+            this.lnkHousePlantInfo.LinkClicked += new System.Windows.Forms.LinkLabelLinkClickedEventHandler(this.lnkHousePlantInfo_LinkClicked);
+            // 
             // Form1
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Moccasin;
             this.ClientSize = new System.Drawing.Size(512, 355);
+            this.Controls.Add(this.lnkHousePlantInfo);
             this.Controls.Add(this.lblSuggestion);
             this.Controls.Add(this.lblTemp);
             this.Controls.Add(this.trkTemp);
@@ -111,6 +124,7 @@
         private System.Windows.Forms.TrackBar trkTemp;
         private System.Windows.Forms.Label lblTemp;
         private System.Windows.Forms.Label lblSuggestion;
+        private System.Windows.Forms.LinkLabel lnkHousePlantInfo;
     }
 }
 
